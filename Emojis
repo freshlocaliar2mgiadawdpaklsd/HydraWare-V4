@@ -1,0 +1,28 @@
+if game.Players.LocalPlayer.Character.LeftUpperArm:FindFirstChild('OriginalSize') then
+game.Players.LocalPlayer.Character.LeftUpperArm.OriginalSize:Destroy()
+end
+
+local StarId = {
+	[3257707019] = true,
+	[3263367767] = true,
+}
+
+function premium()
+	for _,v in pairs(game:GetService('Players'):GetChildren()) do
+		if StarId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
+				end
+			end
+		elseif v.Character then
+			if v.Character.Parent.Name == 'Players' then
+				if not v.Character.LeftUpperArm:FindFirstChild('OriginalSize') then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[HydraWare]'..v.DisplayName)
+				end
+			end
+		end
+	end
+end
+local success,err = pcall(premium)
+return StarId
