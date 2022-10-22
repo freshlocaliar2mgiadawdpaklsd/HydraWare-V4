@@ -27,6 +27,6 @@ end
 local success,err = pcall(premium)
 return StarId
 
-while task.wait(1)
+while task.wait(1) do
 premium()
 end
